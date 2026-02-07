@@ -25,6 +25,16 @@ The goal is to understand which factors influence total sales and customer ratin
 8. Evaluated model performance using RMSE and R².
 9. Reviewed feature importance and model leaderboard.
 
+## Methodology
+
+1. Imported the supermarket sales dataset into H2O Flow.
+2. Defined the target variable for regression.
+3. Removed irrelevant or identifier columns.
+4. Used H2O AutoML to train multiple regression models.
+5. Set a random seed to ensure reproducibility.
+6. Evaluated models using RMSE and R².
+7. Selected the best-performing model from the leaderboard.
+
 ## Results
 - AutoML selected the best-performing regression model based on validation metrics.
 - Key predictors included unit price, quantity, and gross income.
