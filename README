@@ -1,0 +1,47 @@
+# Supermarket Sales Regression using H2O AutoML
+
+## Project Overview
+This project uses H2O Flow and AutoML to build regression models that predict supermarket sales.
+The goal is to understand which factors influence total sales and customer ratings.
+
+## Dataset
+- File: dataset_regression_supermarket_sales.csv
+- Source: Course-provided dataset
+- Description: Contains transaction-level supermarket sales data including product, customer, and payment details.
+
+## Tools & Technologies
+- H2O Flow (AutoML)
+- Java (H2O backend)
+- MacOS
+
+## Project Workflow
+1. Launched H2O Flow locally using Java.
+2. Imported the dataset into H2O Flow.
+3. Verified column data types and distributions.
+4. Converted categorical variables (enum) where required.
+5. Defined the target variable for regression.
+6. Split the dataset into training and testing sets.
+7. Used H2O AutoML to train multiple regression models.
+8. Evaluated model performance using RMSE and R².
+9. Reviewed feature importance and model leaderboard.
+
+## Results
+- AutoML selected the best-performing regression model based on validation metrics.
+- Key predictors included unit price, quantity, and gross income.
+
+## Files in this Repository
+- notebook_regression_supermarket_sales.flow: H2O Flow notebook with all steps
+- dataset_regression_supermarket_sales.csv: Input dataset
+- README.md: Project documentation
+
+## How to Run This Project
+1. Install Java.
+2. Download and run `h2o.jar`.
+3. Open http://localhost:54321 in a browser.
+4. Upload the `.flow` file using **Flow → Upload Flow**.
+5. Import the dataset when prompted.
+
+## Key Learnings
+- Hands-on experience with AutoML workflows.
+- Understanding regression modeling and evaluation metrics.
+- Practical exposure to feature handling in H2O.
